@@ -22,4 +22,14 @@
   <listener>
     <listener-class>com.listner.ConnectDBServer</listener-class>
   </listener>
+  <servlet>
+    <description></description>
+    <display-name>LoginM</display-name>
+    <servlet-name>LoginM</servlet-name>
+    <servlet-class>com.controller.LoginM</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>LoginM</servlet-name>
+    <url-pattern>/LoginM</url-pattern>
+  </servlet-mapping>
 </web-app>
