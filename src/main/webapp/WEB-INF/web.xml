@@ -32,4 +32,14 @@
     <servlet-name>LoginM</servlet-name>
     <url-pattern>/LoginM</url-pattern>
   </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>LogoutM</display-name>
+    <servlet-name>LogoutM</servlet-name>
+    <servlet-class>com.controller.LogoutM</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>LogoutM</servlet-name>
+    <url-pattern>/LogoutM</url-pattern>
+  </servlet-mapping>
 </web-app>

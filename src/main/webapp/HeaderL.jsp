@@ -1,4 +1,7 @@
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+	pageEncoding="ISO-8859-1"%>
 <!-- Header section -->
+
 <header class="header-section">
 	<div class="container">
 		<div class="row">
@@ -11,7 +14,10 @@
 				</div>
 			</div>
 			<div class="col-lg-9 col-md-9">
+				<%--<%if(session.getAttribute("userid")==null){ %>  --%>
 				<a href="login.html" class="site-btn header-btn">Login</a>
+				
+				
 				<nav class="main-menu">
 					<ul>
 						<li><a href="index.html">Home</a></li>

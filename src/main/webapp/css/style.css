@@ -292,6 +292,9 @@ ol {
 .header-btn {
 	float: right;
 	margin-right: 0;
+	font-size: xx-large;
+	font-weight: bolder;
+	text-transform: capitalize;
 }
 
 .nav-switch {

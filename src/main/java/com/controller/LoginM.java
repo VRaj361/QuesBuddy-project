@@ -32,22 +32,36 @@ public class LoginM extends HttpServlet {
 		try {
 			is_check=dao.checkAlldata(lbean);
 			System.out.println(is_check);
+			
 		} catch (SQLException e) {
 			e.printStackTrace();
 		}
 		if(is_check) {
 			System.out.println("user exists");
 //			UseridCookie uc=new UseridCookie();//for accessing the value userid
+			
+			UserBean user=new UserBean();
+			try {
+				user=dao.fetchAllData(UseridCookie.userid);
+			} catch (SQLException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
+			System.out.println("user "+user);
+			System.out.println(user.getFirstName()+" "+user.getLastName());
+			request.setAttribute("UserALLInfo", user);
+			
 			HttpSession session =   request.getSession();
 			session.setAttribute("userid", UseridCookie.userid); 
+			session.setAttribute("name", user.getFirstName());
 
 			session.setMaxInactiveInterval(60*10);//seconds 
 			
 			Cookie c=new Cookie("userid", Integer.toString(UseridCookie.userid));
 			c.setMaxAge(60*10);
 			response.addCookie(c);
-			response.sendRedirect("Homelogout.jsp");
-//			request.getRequestDispatcher("ListAnotherQuestionHome").forward(request, response);;
+//			response.sendRedirect("HomeLogin.jsp");
+			request.getRequestDispatcher("HomeLogin.jsp").forward(request, response);;
 		}else {
 			request.setAttribute("direct_EL", "Email and Password doesn't exists");
 			request.getRequestDispatcher("login.jsp").forward(request, response);
