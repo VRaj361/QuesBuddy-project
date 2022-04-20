@@ -4,14 +4,14 @@
 <html>
 <head>
 <meta charset="ISO-8859-1">
-<title>Our Courses</title>
+<title>Ask A Question</title>
 <!-- ALL HEADER INFORMATION  -->
 
 <jsp:include page="TagHead.jsp"></jsp:include>
 
 
 </head>
-<body>
+<body>	
 	<!-- LOADING -->
 
 	
@@ -24,24 +24,23 @@
 	<jsp:include page="HeaderLogin.jsp"/>	
 
 
-	<!-- WALLPAPER BACK -->
-	
-	
-	<jsp:include page="SectionCoursePhoto.jsp"/>
+	<!-- SEARCH SECTION BAR WHERE SEARCH BAR ARE THERE -->
+
+
+	<jsp:include page="SectionAskAQuestionPhoto.jsp" />
 
 
 	<!-- HERO SECTION ASK QUESTION WITH BLACK DARK WALLPAPER PENCIL-->
 
 
-	<jsp:include page="SectionSearchbarForCourse.jsp" />
-
-
-	<!-- MAIN SECTION OF COURSE -->
+	<jsp:include page="SectionSearchbar.jsp" />
 	
 	
-	<jsp:include page="SectionCourseMain.jsp"/>
-
-
+	<!-- MAIN SECTION WHICH CONTAIN ALL TYPE OF SHOW QUESTION -->
+	
+	
+	<jsp:include page="SectionMainAskQuestion.jsp"></jsp:include>
+	
 
 	<!-- REGISTER NOW JOIN THE COMMUNITY -->
 

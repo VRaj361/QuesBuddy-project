@@ -34,7 +34,7 @@
 	<!-- HERO SECTION ASK QUESTION WITH BLACK DARK WALLPAPER PENCIL-->
 
 
-	<jsp:include page="SearchBarContactAll.jsp" />
+	<jsp:include page="SectionSearchbar.jsp" />
 	
 	
 	<!-- MAIN SECTION WHICH CONTAIN ALL TYPE OF SHOW QUESTION -->
@@ -42,7 +42,7 @@
 	
 	<jsp:include page="SectionShowQuestionMain.jsp"></jsp:include>
 	
-
+	
 	<!-- REGISTER NOW JOIN THE COMMUNITY -->
 
 

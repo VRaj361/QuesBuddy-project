@@ -1,10 +1,10 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
-    pageEncoding="ISO-8859-1"%>
+	pageEncoding="ISO-8859-1"%>
 <!DOCTYPE html>
 <html>
 <head>
 <meta charset="ISO-8859-1">
-<title>Our Courses</title>
+<title>About Us</title>
 <!-- ALL HEADER INFORMATION  -->
 
 <jsp:include page="TagHead.jsp"></jsp:include>
@@ -14,33 +14,32 @@
 <body>
 	<!-- LOADING -->
 
-	
+
 	<jsp:include page="PageLoader.jsp" />
-	
-	
+
+
 	<!-- HEADER SHOW  -->
 
 
-	<jsp:include page="HeaderLogin.jsp"/>	
+	<jsp:include page="HeaderLogin.jsp" />
 
 
-	<!-- WALLPAPER BACK -->
-	
-	
-	<jsp:include page="SectionCoursePhoto.jsp"/>
+	<!-- SEARCH SECTION BAR WHERE SEARCH BAR ARE THERE -->
+
+
+	<jsp:include page="SectionAboutUsphoto.jsp" />
 
 
 	<!-- HERO SECTION ASK QUESTION WITH BLACK DARK WALLPAPER PENCIL-->
 
 
-	<jsp:include page="SectionSearchbarForCourse.jsp" />
+	<jsp:include page="SectionSearchbar.jsp" />
 
 
-	<!-- MAIN SECTION OF COURSE -->
-	
-	
-	<jsp:include page="SectionCourseMain.jsp"/>
+	<!-- MAIN SECTION WHICH CONTAIN ALL TYPE OF SHOW QUESTION -->
 
+
+	<jsp:include page="SectionAboutUsMain.jsp"></jsp:include>
 
 
 	<!-- REGISTER NOW JOIN THE COMMUNITY -->

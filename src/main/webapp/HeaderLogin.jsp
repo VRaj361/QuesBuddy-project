@@ -19,7 +19,7 @@ String name=(String)session.getAttribute("name");
 			</div>
 			<div class="col-lg-9 col-md-9">
 					<% if(session.getAttribute("userid")==null||name==null){ %>  
-						<a href="login.jsp" class="site-btn header-btn text-capitalize fs-1 ">Login</a>
+						<a href="login.jsp" class="site-btn header-btn text-capitalize fs-1  ">Login</a>
 					<%}else{ %>
 						<a href="LogoutM" class="site-btn header-btn text-capitalize fs-1 "><%=name %></a>
 					<%} %>
@@ -28,9 +28,9 @@ String name=(String)session.getAttribute("name");
 				<nav class="main-menu">
 					<ul>
 						<li><a href="HomeLogin.jsp">Home</a></li>
-						<li><a href="#">About us</a></li>
+						<li><a href="AboutUs.jsp">About us</a></li>
 						<li><a href="ShowQuestion.jsp">Show Question</a></li>
-						<li><a href="blog.html">Ask Question</a></li>
+						<li><a href="AskAQuestion.jsp">Ask Question</a></li>
 						<li><a href="Contact.jsp">Contact</a></li>
 					</ul>
 				</nav>

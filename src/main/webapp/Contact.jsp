@@ -35,7 +35,7 @@
 	<!-- HERO SECTION ASK QUESTION WITH BLACK DARK WALLPAPER PENCIL-->
 
 
-	<jsp:include page="SearchBarContactAll.jsp" />
+	<jsp:include page="SectionSearchbar.jsp" />
 
 
 	<!-- PAGE CONTACT MAIN WHERE MAP ARE THERE  -->
