@@ -2,22 +2,52 @@
 	pageEncoding="ISO-8859-1"%>
 <!-- section for ask question-->
 
+<%
+//UserBean user=(UserBean)request.getAttribute("UserALLInfo"); 
+String name = (String) session.getAttribute("name");
+String toast = (String) request.getAttribute("isToast");
+%>
+
 <section class="contact-page spad pb-0">
 	<div class="container">
+	<%if(toast!=null&&toast.equals("yes")){ %>
+	
+	<div class="alert alert-success alert-dismissible">
+    	<button type="button" class="close" data-dismiss="alert">&times;</button>
+    	<strong>Success!</strong> Your Question is sent successfully.
+  </div>
+	<%} %>
 		<div class="row">
 			<div class="col-lg-8">
 				<div class="contact-form-warp">
 					<div class="section-title text-white text-left">
 						<h2>Ask a Question</h2>
-						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-							Donec malesuada lorem maximus mauris scelerisque, at rutrum nulla
-							dictum. Ut ac ligula sapien.</p>
+						<p>Question can answer by community, Experts in their field
+							and Industrail Professionals.</p>
 					</div>
-					<form class="contact-form">
-						<input type="text" placeholder="Your title">
-						<textarea placeholder="Message"></textarea>
-						<input type="text" placeholder="Your tags">
-						<button class="site-btn">Submit</button>
+					<form class="contact-form" action="AskAQuestionMainServlet" >
+						
+		
+						
+						<%
+						if (session.getAttribute("userid") == null || name == null) {
+						%>
+							<input type="text" placeholder="Your title" disabled>
+							<textarea placeholder="Message"  disabled></textarea>
+							<input type="text" placeholder="Your tags"  disabled>
+							<a href="login.jsp" class="site-btn">Login</a>
+						<%
+						} else {
+						%>
+							<input type="text" placeholder="Your title" name="title_askH">
+							<p class="text-danger">${title_askHE }</p>
+							<textarea placeholder="Message" name="body_askH" ></textarea>
+							<p class="text-danger">${body_askHE }</p>
+							<input type="text" placeholder="Your tags" name="tags_askH" >
+							<button class="site-btn" >Submit</button>
+						<%
+						}
+						%>
 					</form>
 				</div>
 			</div>

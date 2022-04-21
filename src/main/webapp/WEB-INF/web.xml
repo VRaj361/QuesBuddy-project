@@ -42,4 +42,24 @@
     <servlet-name>LogoutM</servlet-name>
     <url-pattern>/LogoutM</url-pattern>
   </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>AskAQuestionMainFilter</display-name>
+    <servlet-name>AskAQuestionMainFilter</servlet-name>
+    <servlet-class>com.filter.AskAQuestionMainFilter</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>AskAQuestionMainFilter</servlet-name>
+    <url-pattern>/AskAQuestionMainFilter</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>AskAQuestionMainServlet</display-name>
+    <servlet-name>AskAQuestionMainServlet</servlet-name>
+    <servlet-class>com.controller.AskAQuestionMainServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>AskAQuestionMainServlet</servlet-name>
+    <url-pattern>/AskAQuestionMainServlet</url-pattern>
+  </servlet-mapping>
 </web-app>
