@@ -380,6 +380,7 @@ ol {
 	color: white;
 	background-color: #d82a4e;
 }
+
 .categorie-item button:hover{
 	background: white;
 	color: #d82a4e;
@@ -389,6 +390,8 @@ ol {
 
 .categorie-item:hover {
 	background: #d82a4e;
+	
+	
 }
 
 .categorie-item:hover .ci-text h5,

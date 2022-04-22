@@ -8,38 +8,38 @@
 					<ul class="contact-list">
 						<li>1481 Creekside Lane <br>Avila Beach, CA 931
 						</li>
-						<li>+53 345 7953 32453</li>
-						<li>yourmail@gmail.com</li>
+						<li>+91 1800 00 000</li>
+						<li>quesbuddy@education.com</li>
 					</ul>
 				</div>
 				<div class="widget-item">
-					<h4>Engeneering</h4>
+					<h4>Engineering</h4>
 					<ul>
 						<li><a href="">Applied Studies</a></li>
-						<li><a href="">Computer Engeneering</a></li>
-						<li><a href="">Software Engeneering</a></li>
-						<li><a href="">Informational Engeneering</a></li>
-						<li><a href="">System Engeneering</a></li>
+						<li><a href="">Computer Engineering</a></li>
+						<li><a href="">Software Engineering</a></li>
+						<li><a href="">Informational Engineering</a></li>
+						<li><a href="">System Engineering</a></li>
 					</ul>
 				</div>
 				<div class="widget-item">
 					<h4>Graphic Design</h4>
 					<ul>
 						<li><a href="">Applied Studies</a></li>
-						<li><a href="">Computer Engeneering</a></li>
-						<li><a href="">Software Engeneering</a></li>
-						<li><a href="">Informational Engeneering</a></li>
-						<li><a href="">System Engeneering</a></li>
+						<li><a href="">Computer Engineering</a></li>
+						<li><a href="">Software Engineering</a></li>
+						<li><a href="">Informational Engineering</a></li>
+						<li><a href="">System Engineering</a></li>
 					</ul>
 				</div>
 				<div class="widget-item">
 					<h4>Development</h4>
 					<ul>
 						<li><a href="">Applied Studies</a></li>
-						<li><a href="">Computer Engeneering</a></li>
-						<li><a href="">Software Engeneering</a></li>
-						<li><a href="">Informational Engeneering</a></li>
-						<li><a href="">System Engeneering</a></li>
+						<li><a href="">Computer Engineering</a></li>
+						<li><a href="">Software Engineering</a></li>
+						<li><a href="">Informational Engineering</a></li>
+						<li><a href="">System Engineering</a></li>
 					</ul>
 				</div>
 				<div class="widget-item">

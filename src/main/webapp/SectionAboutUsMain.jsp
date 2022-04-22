@@ -30,12 +30,11 @@
 							<a href="#">Ex. Amazon, Facebook, Google</a>
 						</div>
 					</div>
-					<p>Lorem ipsum dolor sit amet, consectetur. Phasellus
-						sollicitudin et nunc eu efficitur. Sed ligula nulla, molestie quis
-						ligula in, eleifend rhoncus ipsum. Donec ultrices, sem vel
-						efficitur molestie, massa nisl posuere ipsum, ut vulputate mauris
-						ligula a metus. Aenean vel congue diam, sed bibendum ipsum. Nunc
-						vulputate aliquet tristique. Integer et pellentesque urna.</p>
+					<p>Continuous learning also helps us to keep pursuing our
+						personal and professional development goals, and all the
+						achievements along the way are a great source of happiness for
+						many of us. It also helps us keep boredom at bay, which is another
+						way of increasing our happiness.</p>
 
 				</div>
 
@@ -48,16 +47,13 @@
 							<div class="panel-header" id="headingOne">
 								<button class="panel-link" data-toggle="collapse"
 									data-target="#collapse1" aria-expanded="false"
-									aria-controls="collapse1">Praesent neque metus,
-									accumsan in sagittis eu, mattis vitae</button>
+									aria-controls="collapse1">Contact Us</button>
 							</div>
 							<div id="collapse1" class="collapse" aria-labelledby="headingOne"
 								data-parent="#accordion">
 								<div class="panel-body">
-									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-										Donec malesuada lorem maximus mauris scelerisque, at rutrum
-										nulla dictum. Ut ac ligula sapien. Suspendisse cursus faucibus
-										finibus.</p>
+									<p>contact@quesbuddy.com</p>
+									<p>1800-00-000</p>
 								</div>
 							</div>
 						</div>
@@ -65,16 +61,14 @@
 							<div class="panel-header" id="headingTwo">
 								<button class="panel-link" data-toggle="collapse"
 									data-target="#collapse2" aria-expanded="false"
-									aria-controls="collapse2">Neque metus, accumsan in
-									sagittis eu, mattis</button>
+									aria-controls="collapse2">Certification</button>
 							</div>
 							<div id="collapse2" class="collapse" aria-labelledby="headingTwo"
 								data-parent="#accordion">
 								<div class="panel-body">
-									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-										Donec malesuada lorem maximus mauris scelerisque, at rutrum
-										nulla dictum. Ut ac ligula sapien. Suspendisse cursus faucibus
-										finibus.</p>
+									<p>If you complete the your course successfully 100% then
+										pass the assessment. Our Certification values in market are
+										very Good.</p>
 								</div>
 							</div>
 						</div>
@@ -82,19 +76,20 @@
 							<div class="panel-header active" id="headingThree">
 								<button class="panel-link active" data-toggle="collapse"
 									data-target="#collapse3" aria-expanded="true"
-									aria-controls="collapse3">Vivamus sollicitudin nisi
-									sit amet dolor varius, et porta</button>
+									aria-controls="collapse3">Nasscom Certified</button>
 							</div>
 							<div id="collapse3" class="collapse show"
 								aria-labelledby="headingThree" data-parent="#accordion">
 								<div class="panel-body">
-									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-										Donec malesuada lorem maximus mauris scelerisque, at rutrum
-										nulla dictum. Ut ac ligula sapien. Suspendisse cursus faucibus
-										finibus.</p>
+									<p>NASSCOM encourages its members to adopt world-class
+										management practices, build and uphold highest quality
+										standards and become globally competitive. NASSCOM is
+										headquartered in New Delhi with several regional offices in
+										India. About Us.</p>
 								</div>
 							</div>
 						</div>
+						
 					</div>
 				</div>
 				<div class="col-lg-6">
@@ -103,36 +98,36 @@
 						<ul class="nav nav-tabs" id="myTab" role="tablist">
 							<li class="nav-item"><a class="nav-link active" id="1-tab"
 								data-toggle="tab" href="#tab-1" role="tab" aria-controls="tab-1"
-								aria-selected="true">Praesent neque metus</a></li>
+								aria-selected="true">Placement Support</a></li>
 							<li class="nav-item"><a class="nav-link" id="2-tab"
 								data-toggle="tab" href="#tab-2" role="tab" aria-controls="tab-2"
-								aria-selected="false">Neque metus</a></li>
+								aria-selected="false">Mentor Support</a></li>
 							<li class="nav-item"><a class="nav-link" id="3-tab"
 								data-toggle="tab" href="#tab-3" role="tab" aria-controls="tab-3"
-								aria-selected="false">Vivamus sollici</a></li>
+								aria-selected="false">Discounts</a></li>
 						</ul>
 						<div class="tab-content" id="myTabContent">
 							<!-- single tab content -->
 							<div class="tab-pane fade show active" id="tab-1" role="tabpanel"
 								aria-labelledby="tab-1">
-								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-									Donec malesuada lorem maximus mauris scelerisque, at rutrum
-									nulla dictum. Ut ac ligula sapien. Suspendisse cursus faucibus
-									finibus.</p>
+								<p>
+									Job placement assistance is a form of help provided to job
+									seekers from all walks of life by a variety of different
+									sources.Our placement are very good for fresher. Highest
+									Package <strong>1.08 crore</strong>. Average Package between <strong>
+										8 LPA to 50 LPA </strong>
+								</p>
 							</div>
 							<div class="tab-pane fade" id="tab-2" role="tabpanel"
 								aria-labelledby="tab-2">
-								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-									Donec malesuada lorem maximus mauris scelerisque, at rutrum
-									nulla dictum. Ut ac ligula sapien. Suspendisse cursus faucibus
-									finibus.</p>
+								<p>The mentor supports the mentee in problem-solving,
+									decision making and testing out new strategies. We have 24*7
+									Help Support also so you can solve your doubt on your time</p>
 							</div>
 							<div class="tab-pane fade" id="tab-3" role="tabpanel"
 								aria-labelledby="tab-3">
-								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-									Donec malesuada lorem maximus mauris scelerisque, at rutrum
-									nulla dictum. Ut ac ligula sapien. Suspendisse cursus faucibus
-									finibus.</p>
+								<p>Discounts are vary time to time. At most cases Discounts
+									are available on Special Occasions and festivals.</p>
 							</div>
 						</div>
 					</div>
@@ -232,22 +227,24 @@
 					<h5>
 						<span>01.</span>Amazing Teachers
 					</h5>
-					<p>Donec molestie tincidunt tellus sit amet aliquet. Proin
-						auctor nisi ut purus ele ifend, et auctor lorem.</p>
+					<p>Some qualities of a good teacher include skills in
+						communication, listening, collaboration, adaptability, empathy and
+						patience.</p>
 				</div>
 				<div class="col-lg-4 col-md-6 icon-box">
 					<h5>
 						<span>02.</span>Training Center
 					</h5>
-					<p>Molestie tincidunt tellus sit amet aliquet. Proin auctor
-						nisi ut purus ele ifend, et auctor lorem hendrerit.</p>
+					<p>a place where people undergo skills training for work. 2.
+						sport. a place where people undergo sports training.</p>
 				</div>
 				<div class="col-lg-4 col-md-6 icon-box">
 					<h5>
-						<span>03.</span>Training Center
+						<span>03.</span>24/7 Help Support
 					</h5>
-					<p>Itincidunt tellus sit amet aliquet. Proin auctor nisi ut
-						purus ele ifend, et auctor lorem hendrerit.</p>
+					<p>The principal purpose of a help desk is to cut down IT
+						services and functions' downtimes, making them available for much
+						longer periods of time.</p>
 				</div>
 			</div>
 		</div>

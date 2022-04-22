@@ -11,7 +11,7 @@ String toast = (String) request.getAttribute("isToast");
 <section class="contact-page spad pb-0">
 	<div class="container">
 	<%if(toast!=null&&toast.equals("yes")){ %>
-	
+	toast="";
 	<div class="alert alert-success alert-dismissible">
     	<button type="button" class="close" data-dismiss="alert">&times;</button>
     	<strong>Success!</strong> Your Question is sent successfully.

@@ -7,7 +7,7 @@
 String name = (String) session.getAttribute("name");
 %>
 
-<section class="banner-section spad">
+<section class="banner-section spad" style="border-top: 3px solid #d82a4e;">
 	<div class="container">
 		<div class="section-title mb-0 pb-2">
 			<h2>Join Our Community Now!</h2>

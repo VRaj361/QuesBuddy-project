@@ -3,9 +3,7 @@
 	<div class="container">
 		<div class="section-title mb-0">
 			<h2>Featured Courses</h2>
-			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
-				malesuada lorem maximus mauris scelerisque, at rutrum nulla dictum.
-				Ut ac ligula sapien. Suspendisse cursus faucibus finibus.</p>
+			<p>Featured Courses top the list of training items displayed on the page, allowing users to easily see and access important courses.</p>
 		</div>
 	</div>
 	<div class="course-warp">

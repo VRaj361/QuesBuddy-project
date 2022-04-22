@@ -7,9 +7,10 @@
 				<div class="contact-form-warp">
 					<div class="section-title text-white text-left">
 						<h2>Get in Touch</h2>
-						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-							Donec malesuada lorem maximus mauris scelerisque, at rutrum nulla
-							dictum. Ut ac ligula sapien.</p>
+						<p>Having a website without contact information is just a
+							waste of a resource. Sure, you are able to get your name out
+							there on the web, but without proper contact information, there's
+							a chance search engines would never pull your site up.</p>
 					</div>
 					<form class="contact-form">
 						<input type="text" placeholder="Your Name"> <input
@@ -24,19 +25,18 @@
 				<div class="contact-info-area">
 					<div class="section-title text-left p-0">
 						<h2>Contact Info</h2>
-						<p>Donec malesuada lorem maximus mauris scelerisque, at rutrum
-							nulla dictum. Ut ac ligula sapien. Suspendi sse cursus faucibus
-							finibus.</p>
+						<p>Your contact information is used to contact you, and can
+							include information such as your name, phone number and email.</p>
 					</div>
 					<div class="phone-number">
 						<span>Direct Line</span>
-						<h2>+53 345 7953 32453</h2>
+						<h2>+91 1800-00-000</h2>
 					</div>
 					<ul class="contact-list">
 						<li>1481 Creekside Lane <br>Avila Beach, CA 931
 						</li>
-						<li>+53 345 7953 32453</li>
-						<li>yourmail@gmail.com</li>
+						<li>+91 1800-00-000</li>
+						<li>quesbuddy@education.com</li>
 					</ul>
 					<div class="social-links">
 						<a href="#"><i class="fa fa-pinterest"></i></a> <a href="#"><i

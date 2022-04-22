@@ -1,86 +1,67 @@
+<%@page import="com.bean.Questionget"%>
+<%@page import="java.util.ArrayList"%>
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
 	pageEncoding="ISO-8859-1"%>
-<!-- Page  -->
 
+	<%
+	ArrayList<Questionget> arr = (ArrayList<Questionget>) request.getAttribute("ShowQuestionArr");
+	%>
+
+		<%
+		if (arr == null || arr.size() == 0) {
+		%>
+		
+		<div class=" container">
+			<p class="text-center " style="letter-spacing: 2px; font-size: 5rem;">We don't have any data related your search.</p>
+			
+			
+		</div>
+		
+		
+		<%
+		}else{
+		%>
 <section class="blog-page spad pb-0">
 	<div class="container">
 		<div class="row">
-			<div class="col-lg-9">
+			<div class="col-lg-9"  >
 				<!-- blog post -->
+				<%for(Questionget x:arr){ %>
 				<div class="blog-post">
-					<img src="img/blog/1.jpg" alt="">
-					<h3>How to create the perfect resume</h3>
+				
+					<h3><%=x.getTitle() %></h3>
 					<div class="blog-metas">
 						<div class="blog-meta author">
-							<div class="post-author set-bg" data-setbg="img/authors/1.jpg"></div>
-							<a href="#">James Smith</a>
+							<div class="post-author set-bg" style="border-radius: 50%; background-color: #d82a4e; text-align: center; color:white; font-size:x-large; font-weight: bolder;"><%=x.getFirstname().toUpperCase().charAt(0) %></div>
+							<a href="#"><%=x.getFirstname()+" "+x.getLastname() %></a>
+						</div>
+						
+						<div class="blog-meta">
+							<a href="#"><%=x.getDate() %></a>
 						</div>
 						<div class="blog-meta">
-							<a href="#">Development</a>
-						</div>
-						<div class="blog-meta">
-							<a href="#">June 12, 2018</a>
-						</div>
-						<div class="blog-meta">
-							<a href="#">2 Comments</a>
+							<a href="#"></a>
 						</div>
 					</div>
-					<p>Use real estate wisely. Cut the clutter in both appearance
-						and content. ... Focus on relevant experience. ... Ditch the
-						objective statement. ... Highlight accomplishments instead of job
-						duties. ... Don't ignore the basics.</p>
-					<a href="#" class="site-btn readmore">Read More</a>
+					<div class="blog-meta ">
+							<%String stag[]=x.getTags().split(" "); %>
+							<%if(stag.length!=1){ %>
+							<%for(String s:stag){ %>
+							
+							<a class="btn categorie-item .ci-text " style="color:white; background:#d82a4e" href="SearchServlet?id=<%=s%>"><%=s %></a>
+							<%}} %>
+						</div>
+					<p><%=x.getBody() %></p>
+					
+					<% if(x.getIs_solved().equals("f")){%>
+					<a href="#" class="site-btn readmore">Not Solved</a>
+					<%}else{ %>
+					<a href="#" class="site-btn readmore">Solved</a>
+					<%} %>
 				</div>
-				<!-- blog post -->
-				<div class="blog-post">
-					<img src="img/blog/2.jpg" alt="">
-					<h3>5 Tips to make money from home</h3>
-					<div class="blog-metas">
-						<div class="blog-meta author">
-							<div class="post-author set-bg" data-setbg="img/authors/2.jpg"></div>
-							<a href="#">James Smith</a>
-						</div>
-						<div class="blog-meta">
-							<a href="#">Development</a>
-						</div>
-						<div class="blog-meta">
-							<a href="#">June 12, 2018</a>
-						</div>
-						<div class="blog-meta">
-							<a href="#">2 Comments</a>
-						</div>
-					</div>
-					<p>Reduce Spending by Refinancing Debts. Earn Quick Cash With
-						Online Surveys. Get Paid to Shop. Collect Cash from Microinvesting
-						Apps. Get paid to drive people in your car.F</p>
-					<a href="#" class="site-btn readmore">Read More</a>
-				</div>
-				<!-- blog post -->
-				<div class="blog-post">
-					<img src="img/blog/3.jpg" alt="">
-					<h3>Why choose an online course?</h3>
-					<div class="blog-metas">
-						<div class="blog-meta author">
-							<div class="post-author set-bg" data-setbg="img/authors/3.jpg"></div>
-							<a href="#">James Smith</a>
-						</div>
-						<div class="blog-meta">
-							<a href="#">Development</a>
-						</div>
-						<div class="blog-meta">
-							<a href="#">June 12, 2018</a>
-						</div>
-						<div class="blog-meta">
-							<a href="#">2 Comments</a>
-						</div>
-					</div>
-					<p>Online education enables the teacher and the student to set
-						their own learning pace, and there's the added flexibility of
-						setting a schedule that fits everyone's agenda. As a result, using
-						an online educational platform allows for a better balance of work
-						and studies, so there's no need to give anything up.</p>
-					<a href="#" class="site-btn readmore">Read More</a>
-				</div>
+				<div style="border-top: 3px solid #d82a4e;"></div>
+
+				<%} %>
 				<!-- <div class="site-pagination">
 					<span class="active">01.</span> <a href="#" >02.</a> <a href="#">03</a>
 				</div> -->
@@ -104,11 +85,11 @@
 						<li><a href="SearchServlet?id=uncategorizes">Uncategorizes</a></li>
 					</ul>
 				</div>
-
+				
 				<div class="sb-widget-item">
 					<h4 class="sb-w-title">Archives</h4>
 					<div class="tags">
-						<a href="">education</a> <a href="#">courses</a> <a href="#">development</a>
+						<a href="#">education</a> <a href="#">courses</a> <a href="#">development</a>
 						<a href="#">design</a> <a href="#">on line courses</a> <a href="#">wp</a>
 						<a href="#">html5</a> <a href="#">music</a>
 					</div>
@@ -118,6 +99,7 @@
 		</div>
 	</div>
 </section>
+<%} %>
 <!-- Page -->
 <section class="realated-courses spad">
 	<div class="course-warp">
@@ -222,6 +204,4 @@
 		</div>
 	</div>
 </section>
-<!-- Page end -->
-
 <!-- Page end -->

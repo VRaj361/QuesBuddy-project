@@ -8,8 +8,8 @@
 		</div>
 		<div class="row">
 			<div class="col-lg-10  offset-lg-1">
-				<form class="intro-newslatter d-lg-flex justify-content-center">
-					<input type="text" placeholder="Type Topic name here">
+				<form class="intro-newslatter d-lg-flex justify-content-center" action="SearchServlet">
+					<input type="text" placeholder="Type Topic name here" name="show_question">
 
 					<button class="site-btn">Ask A Topic</button>
 				</form>
