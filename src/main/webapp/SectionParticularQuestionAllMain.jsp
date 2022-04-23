@@ -7,6 +7,7 @@
 Questionget bean = (Questionget) request.getAttribute("partiuser");
 ArrayList<Questionget> arr = (ArrayList<Questionget>) request.getAttribute("answers");
 %>
+
 <section class="blog-page spad pb-0">
 	<div class="container">
 		<div class="row">
@@ -14,7 +15,7 @@ ArrayList<Questionget> arr = (ArrayList<Questionget>) request.getAttribute("answ
 				<!-- blog post -->
 
 				<div class="blog-post">
-
+					<%if(bean!=null&&arr!=null){ %>	
 					<h3><%=bean.getTitle()%></h3>
 					<div class="blog-metas">
 						<div class="blog-meta author">
@@ -60,6 +61,11 @@ ArrayList<Questionget> arr = (ArrayList<Questionget>) request.getAttribute("answ
 								<input type="hidden" name="question" value="<%=bean.getQuestionid()%>">
 								<textarea placeholder="Message" name="text_user"></textarea>
 								<button class="site-btn">Submit</button>
+								<%String error1=(String)request.getAttribute("error_login");%>
+									<% if(error1!=null&&error1.equals("yes")){%>
+										
+										<p class="text-danger">Please Login First.</p>
+									<%}else{}%>
 							</form>
 							<%String text_error=(String)request.getAttribute("text_usere"); %>
 							<%if(text_error!=null){
@@ -110,8 +116,10 @@ ArrayList<Questionget> arr = (ArrayList<Questionget>) request.getAttribute("answ
 					</div>
 
 
+					<%}else{ %>
 
-
+						<h3 class="text-danger text-center ">Please Login First.</h3>
+					<%} %>
 				</div>
 				<div style="border-top: 3px solid #d82a4e;"></div>
 

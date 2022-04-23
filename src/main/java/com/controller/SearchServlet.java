@@ -27,7 +27,7 @@ public class SearchServlet extends HttpServlet {
 		}
 		String[] arrs=str.split(" ");
 		QuesBuddyDao dao=new QuesBuddyDao();
-//		rrayList<Questionget> arr1=new ArrayList<Questionget>();
+
 		HashMap<Integer, Questionget> arr1=new HashMap<Integer, Questionget>();
 		int count=0;
 		for(int i=0;i<arrs.length;i++) {
@@ -38,48 +38,44 @@ public class SearchServlet extends HttpServlet {
 				// TODO Auto-generated catch block
 				e.printStackTrace();
 			}
-			System.out.println("arr res "+arr +"length" +arr.size() );
+			//System.out.println("arr res "+arr +"length" +arr.size() );
+			//System.out.println("arr1 res "+arr1 +"length" +arr1.size() );
 			
 			
 			for(Questionget x:arr) {
 				if(arr1.isEmpty()) {
 					arr1.put(++count,x);
 				}else {
-//					for(Questionget y:arr1) {
-//						if(!x.getTitle().equals(y.getTitle())) {
-//							arr1.add(x);
-//						}else {
-//							
-//						}
-//					}
+
 					Iterator<Integer> it=arr1.keySet().iterator();
-					System.out.println("it "+it);
+					//System.out.println("hello iterator");
+					//System.out.println("it "+it+" arr length "+arr1.size());
+					boolean is_check=false;
 					while(it.hasNext()) {
 						Integer key=it.next();
-						System.out.println(key);
-						System.out.println(arr1.get(key).getTitle()+"   "+x.getTitle());
-						if(!arr1.get(key).getTitle().equals(x.getTitle())) {
-							System.out.println("in");
-							arr1.put(++count, x);
+						//System.out.println(key);
+						//System.out.println(arr1.get(key).getTitle()+"   "+x.getTitle());
+						
+						if(arr1.get(key).getTitle().equals(x.getTitle())) {
+							//System.out.println("in ");
+							is_check=true;
 						}
-//						}else if(arr1.get(key).getTitle().equals(x.getTitle())&&(!arr1.get(key).getFirstname().equals(x.getFirstname()))){
-//							System.out.println("in second");
-//							arr1.put(++count, x);
-//						}else 
-						{
-							break;
-						}
+
+						
 					}//end of while
+					if(is_check==false) {
+						arr1.put(++count, x);
+					}
 				}
 			}
 		}
-		System.out.println("arr res1 "+arr1 +"length " +arr1.size() );
+		//System.out.println("arr res1 "+arr1 +"length " +arr1.size() );
 		request.setAttribute("ShowQuestionArr", arr1);
 		
 		request.getRequestDispatcher("ShowQuestionAll.jsp").forward(request, response);
-		//request can send on show question all page
+		
 	}
-	//call the method of get all data using title
+	
 	
 
 }

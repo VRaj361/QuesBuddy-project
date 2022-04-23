@@ -22,6 +22,11 @@ public class ParticularUserAnsAddServlet extends HttpServlet {
 		if(text.trim().length()>0) {
 			QuesBuddyDao dao=new QuesBuddyDao();
 			HttpSession session=request.getSession();
+			if(session.getAttribute("userid")==null) {
+				System.out.println("enter in userid");
+				request.setAttribute("error_login", "yes");
+				request.getRequestDispatcher("ShowParticularQuestion.jsp").forward(request, response);
+			}else {
 			int userid=(Integer)session.getAttribute("userid");
 			
 			System.out.println(userid+" "+questionid+" "+text);
@@ -33,7 +38,7 @@ public class ParticularUserAnsAddServlet extends HttpServlet {
 			}
 			System.out.println("successfully done user enter");
 			request.getRequestDispatcher("ShowParticularQuestionServlet?question_id="+questionid).forward(request, response);
-			
+			}
 		}else {
 			request.setAttribute("text_usere", "yes");
 //			HttpSession session=request.getSession();

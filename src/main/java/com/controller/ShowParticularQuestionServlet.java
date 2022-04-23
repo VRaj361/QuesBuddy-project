@@ -23,8 +23,8 @@ public class ShowParticularQuestionServlet extends HttpServlet {
 		String questionid=request.getParameter("question_id");
 		System.out.println(questionid);
 		
-		HttpSession session=request.getSession();
-		int userid=(Integer)session.getAttribute("userid");
+		//HttpSession session=request.getSession();
+		//int userid=(Integer)session.getAttribute("userid");
 //		session.setAttribute("questionid", questionid);
 //		int questionid1=(Integer)session.getAttribute("questionid");
 		QuesBuddyDao dao=new QuesBuddyDao();

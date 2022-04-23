@@ -9,7 +9,7 @@
 		<div class="row">
 			<!-- categorie -->
 			<div class="col-lg-4 col-md-6">
-				<div class="categorie-item">
+				<a href="SearchServlet?id=it"><div class="categorie-item">
 					<div class="ci-thumb set-bg" data-setbg="img/categories/1.jpg"></div>
 					<div class="ci-text">
 						<h5>IT Development</h5>
@@ -20,11 +20,11 @@
 
 						<br> <span>Searched: 120 times</span>
 					</div>
-				</div>
+				</div></a>
 			</div>
 			<!-- categorie -->
 			<div class="col-lg-4 col-md-6">
-				<div class="categorie-item">
+				<a href="SearchServlet?id=design"><div class="categorie-item">
 					<div class="ci-thumb set-bg" data-setbg="img/categories/2.jpg"></div>
 					<div class="ci-text">
 						<h5>Web Design</h5>
@@ -35,11 +35,11 @@
 
 						<br> <span>70 Courses</span>
 					</div>
-				</div>
+				</div></a>
 			</div>
 			<!-- categorie -->
 			<div class="col-lg-4 col-md-6">
-				<div class="categorie-item">
+				<a href="SearchServlet?id=drawing"><div class="categorie-item">
 					<div class="ci-thumb set-bg" data-setbg="img/categories/3.jpg"></div>
 					<div class="ci-text">
 						<h5>Illustration & Drawing</h5>
@@ -50,11 +50,11 @@
 
 						<br> <span>55 Courses</span>
 					</div>
-				</div>
+				</div></a>
 			</div>
 			<!-- categorie -->
 			<div class="col-lg-4 col-md-6">
-				<div class="categorie-item">
+				<a href="SearchServlet?id=socialmedia"><div class="categorie-item">
 					<div class="ci-thumb set-bg" data-setbg="img/categories/4.jpg"></div>
 					<div class="ci-text">
 						<h5>Social Media</h5>
@@ -65,11 +65,11 @@
 
 						<br> <span>40 Courses</span>
 					</div>
-				</div>
+				</div></a>
 			</div>
 			<!-- categorie -->
 			<div class="col-lg-4 col-md-6">
-				<div class="categorie-item">
+				<a href="SearchServlet?id=photoshop"><div class="categorie-item">
 					<div class="ci-thumb set-bg" data-setbg="img/categories/5.jpg"></div>
 					<div class="ci-text">
 						<h5>Photoshop</h5>
@@ -80,11 +80,11 @@
 
 						<br> <span>220 Courses</span>
 					</div>
-				</div>
+				</div></a>
 			</div>
 			<!-- categorie -->
 			<div class="col-lg-4 col-md-6">
-				<div class="categorie-item">
+				<a href="SearchServlet?id=cryptocurrencies"><div class="categorie-item">
 					<div class="ci-thumb set-bg" data-setbg="img/categories/6.jpg"></div>
 					<div class="ci-text">
 						<h5>Cryptocurrencies</h5>
@@ -96,7 +96,7 @@
 						<br> <span>25 Courses</span>
 					</div>
 				</div>
-			</div>
+			</div></a>
 		</div>
 	</div>
 </section>

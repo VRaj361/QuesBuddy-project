@@ -15,7 +15,7 @@ if (arr == null || arr.size() == 0) {
 %>
 
 <div class=" container">
-	<p class="text-center " style="letter-spacing: 2px; font-size: 5rem;">We
+	<p class="text-center " style="letter-spacing: 2px; font-size: 4rem;">We
 		don't have any data related your search.</p>
 
 
