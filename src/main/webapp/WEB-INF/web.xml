@@ -72,4 +72,24 @@
     <servlet-name>SearchServlet</servlet-name>
     <url-pattern>/SearchServlet</url-pattern>
   </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>ShowParticularQuestionServlet</display-name>
+    <servlet-name>ShowParticularQuestionServlet</servlet-name>
+    <servlet-class>com.controller.ShowParticularQuestionServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ShowParticularQuestionServlet</servlet-name>
+    <url-pattern>/ShowParticularQuestionServlet</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>ParticularUserAnsAddServlet</display-name>
+    <servlet-name>ParticularUserAnsAddServlet</servlet-name>
+    <servlet-class>com.controller.ParticularUserAnsAddServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ParticularUserAnsAddServlet</servlet-name>
+    <url-pattern>/ParticularUserAnsAddServlet</url-pattern>
+  </servlet-mapping>
 </web-app>

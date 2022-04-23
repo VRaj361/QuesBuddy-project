@@ -1,59 +1,30 @@
-<%@page import="java.util.Iterator"%>
-<%@page import="java.util.HashMap"%>
-<%@page import="com.bean.Questionget"%>
 <%@page import="java.util.ArrayList"%>
+<%@page import="com.bean.Questionget"%>
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
 	pageEncoding="ISO-8859-1"%>
 
 <%
-//ArrayList<Questionget> arr = (ArrayList<Questionget>) request.getAttribute("ShowQuestionArr");
-HashMap<Integer, Questionget> arr = (HashMap<Integer, Questionget>) request.getAttribute("ShowQuestionArr");
-%>
-
-<%
-if (arr == null || arr.size() == 0) {
-%>
-
-<div class=" container">
-	<p class="text-center " style="letter-spacing: 2px; font-size: 5rem;">We
-		don't have any data related your search.</p>
-
-
-</div>
-
-
-<%
-} else {
+Questionget bean = (Questionget) request.getAttribute("partiuser");
+ArrayList<Questionget> arr = (ArrayList<Questionget>) request.getAttribute("answers");
 %>
 <section class="blog-page spad pb-0">
 	<div class="container">
 		<div class="row">
 			<div class="col-lg-9">
 				<!-- blog post -->
-				<%
-				Iterator<Integer> it = arr.keySet().iterator();
-				%>
-				<%
-				while (it.hasNext()) {
-				%>
-				<%
-				Integer key = it.next();
-				%>
-				<%
-				//for(Questionget x:arr){
-				%>
+
 				<div class="blog-post">
 
-					<h3><%=arr.get(key).getTitle()%></h3>
+					<h3><%=bean.getTitle()%></h3>
 					<div class="blog-metas">
 						<div class="blog-meta author">
 							<div class="post-author set-bg"
-								style="border-radius: 50%; background-color: #d82a4e; text-align: center; color: white; font-size: x-large; font-weight: bolder;"><%=arr.get(key).getFirstname().toUpperCase().charAt(0)%></div>
-							<a href="#"><%=arr.get(key).getFirstname() + " " + arr.get(key).getLastname()%></a>
+								style="border-radius: 50%; background-color: #d82a4e; text-align: center; color: white; font-size: x-large; font-weight: bolder;"><%=bean.getFirstname().toUpperCase().charAt(0)%></div>
+							<a href="#"><%=bean.getFirstname() + " " + bean.getLastname()%></a>
 						</div>
 
 						<div class="blog-meta">
-							<a href="#"><%=arr.get(key).getDate()%></a>
+							<a href="#"><%=bean.getDate()%></a>
 						</div>
 						<div class="blog-meta">
 							<a href="#"></a>
@@ -61,7 +32,7 @@ if (arr == null || arr.size() == 0) {
 					</div>
 					<div class="blog-meta ">
 						<%
-						String stag[] = arr.get(key).getTags().split(" ");
+						String stag[] = bean.getTags().split(" ");
 						%>
 						<%
 						if (stag.length != 1) {
@@ -78,67 +49,73 @@ if (arr == null || arr.size() == 0) {
 						}
 						%>
 					</div>
-					<p><%=arr.get(key).getBody()%></p>
-					
-					
-					<%-- <div id="toggletext">
-					<div style="border-top: 3px solid #d82a4e;"></div>
-					<div id="">
-						<form class="contact-form" action="">
-							<h3>Your answer</h3>
-							<textarea placeholder="Message"></textarea>
-							<button class="site-btn">Submit</button>
-						</form>
+					<p><%=bean.getBody()%></p>
 
-					</div>
-					
-					<div class="blog-metas container">
-					
-					<h3>Answer</h3><br><br>
-					
-					<h5>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reiciendis ducimus totam, repellat recusandae provident nam modi maxime obcaecati aliquam fugiat! Architecto illum enim eveniet? Quae incidunt quibusdam dolorum autem nihil, quas cupiditate accusantium optio!</h5>
-						<div class="blog-meta author">
-							<div class="post-author set-bg"
-								style="border-radius: 50%; background-color: #d82a4e; text-align: center; color: white; font-size: x-large; font-weight: bolder;"><%=arr.get(key).getFirstname().toUpperCase().charAt(0)%></div>
-							<a href="#"><%=arr.get(key).getFirstname() + " " + arr.get(key).getLastname()%></a>
+
+					<div id="toggletext">
+						<div style="border-top: 3px solid #d82a4e;"></div>
+						<div>
+							<form class="contact-form" action="ParticularUserAnsAddServlet">
+								<h3>Your answer</h3>
+								<input type="hidden" name="question" value="<%=bean.getQuestionid()%>">
+								<textarea placeholder="Message" name="text_user"></textarea>
+								<button class="site-btn">Submit</button>
+							</form>
+							<%String text_error=(String)request.getAttribute("text_usere"); %>
+							<%if(text_error!=null){
+								if(text_error.equals("yes")){%>
+									<h3 class="text-danger text-center ">Please Enter Something.</h3>
+							<%}} %>
 						</div>
-					<button class="site-btn readmore" disabled>Accepted</button>
-					<button class="site-btn readmore" disabled>Check as Correct Solution</button>
-					<br><br><br>
-					<h5>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reiciendis ducimus totam, repellat recusandae provident nam modi maxime obcaecati aliquam fugiat! Architecto illum enim eveniet? Quae incidunt quibusdam dolorum autem nihil, quas cupiditate accusantium optio!</h5>
-						<div class="blog-meta author">
-							<div class="post-author set-bg"
-								style="border-radius: 50%; background-color: #d82a4e; text-align: center; color: white; font-size: x-large; font-weight: bolder;"><%=arr.get(key).getFirstname().toUpperCase().charAt(0)%></div>
-							<a href="#"><%=arr.get(key).getFirstname() + " " + arr.get(key).getLastname()%></a>
+						<%
+						if (arr.size()!=0) {
+						%>
+						<div class="blog-metas container">
+
+							<h3>Answer</h3>
+							<br> <br>
+							<%
+							for (Questionget x : arr) {
+							%>
+							<h5><%=x.getAnswer()%></h5>
+							<div class="blog-meta author">
+								<div class="post-author set-bg"
+									style="border-radius: 50%; background-color: #d82a4e; text-align: center; color: white; font-size: x-large; font-weight: bolder;"><%=x.getFirstname().toUpperCase().charAt(0)%></div>
+								<a href="#"><%=x.getFirstname() + " " + x.getLastname()%></a>
+							</div>
+							<!-- <button class="site-btn readmore" disabled>Accepted</button>
+							<but ton class="site-btn readmore" disabled>Check as
+								Correct Solution</button>-->
+							<br> <br> <br> <br>
+
+							<%
+							}
+							%>
 						</div>
-					<button class="site-btn readmore" disabled>Accepted</button>
-					<button class="site-btn readmore" disabled>Check as Correct Solution</button>	
 						
+						<%
+						} else {
+						%>
+
+						<div class=" container">
+							<p class="text-center "
+								style="letter-spacing: 2px; font-size: 2rem;">We don't have
+								any answer related this Question.</p>
+
+						</div>
+
+						<%
+						}
+						%>
 					</div>
-					<br><br><br>
-					
-					</div> --%>
-					
-					
-					
-					<%
-					if (arr.get(key).getIs_solved().equals("f")) {
-					%>
-					
-					<a class="site-btn readmore" href="ShowParticularQuestionServlet?question_id=<%=arr.get(key).getQuestionid() %>" style="color:white">Details</a>
-					<% 
-					} else {
-					%>
-					<a class="site-btn readmore" href="ShowParticularQuestionServlet?question_id=<%=arr.get(key).getQuestionid() %>" style="color:white">Details</a>
-					<%
-					}
-					%>
+
+
+
+
 				</div>
 				<div style="border-top: 3px solid #d82a4e;"></div>
 
-				<%
-				}
-				%>
+
 				<!-- <div class="site-pagination">
 					<span class="active">01.</span> <a href="#" >02.</a> <a href="#">03</a>
 				</div> -->
@@ -176,9 +153,7 @@ if (arr == null || arr.size() == 0) {
 		</div>
 	</div>
 </section>
-<%
-}
-%>
+
 <!-- Page -->
 <section class="realated-courses spad">
 	<div class="course-warp">

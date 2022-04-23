@@ -7,7 +7,21 @@ public class Questionget {
 	String body;
 	String is_solved;
 	String date;
-	int questionid,userid;
+	int questionid,userid,answerid;
+	String answer;
+	
+	public int getAnswerid() {
+		return answerid;
+	}
+	public void setAnswerid(int answerid) {
+		this.answerid = answerid;
+	}
+	public String getAnswer() {
+		return answer;
+	}
+	public void setAnswer(String answer) {
+		this.answer = answer;
+	}
 	public String getFirstname() {
 		return firstname;
 	}
