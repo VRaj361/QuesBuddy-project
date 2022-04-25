@@ -21,7 +21,7 @@ String name=(String)session.getAttribute("name");
 					<% if(session.getAttribute("userid")==null||name==null){ %>  
 						<a href="login.jsp" class="site-btn header-btn text-capitalize fs-1  ">Login</a>
 					<%}else{ %>
-						<a href="LogoutM" class="site-btn header-btn text-capitalize fs-1 "><%=name %></a>
+						<a href="Profileservlet" class="site-btn header-btn text-capitalize fs-1 "><%=name %></a>
 					<%} %>
 				
 					<!-- servlet and destroy session and cookie after redirect on homelayout.jsp  -->

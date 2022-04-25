@@ -92,4 +92,14 @@
     <servlet-name>ParticularUserAnsAddServlet</servlet-name>
     <url-pattern>/ParticularUserAnsAddServlet</url-pattern>
   </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>Profileservlet</display-name>
+    <servlet-name>Profileservlet</servlet-name>
+    <servlet-class>com.controller.Profileservlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Profileservlet</servlet-name>
+    <url-pattern>/Profileservlet</url-pattern>
+  </servlet-mapping>
 </web-app>
