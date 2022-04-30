@@ -57,7 +57,7 @@
 		<div class="footer-warp">
 			<ul class="footer-menu">
 				<li><a href="#">Terms & Conditions</a></li>
-				<li><a href="signup.html">Register</a></li>
+				<li><a href="signup.jsp">Register</a></li>
 				<li><a href="#">Privacy</a></li>
 			</ul>
 

@@ -61,6 +61,10 @@ public class LoginM extends HttpServlet {
 			c.setMaxAge(60*10);
 			response.addCookie(c);
 //			response.sendRedirect("HomeLogin.jsp");
+			
+			
+			
+			
 			request.getRequestDispatcher("HomeLogin.jsp").forward(request, response);;
 		}else {
 			request.setAttribute("direct_EL", "Email and Password doesn't exists");

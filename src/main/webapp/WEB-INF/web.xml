@@ -102,4 +102,24 @@
     <servlet-name>Profileservlet</servlet-name>
     <url-pattern>/Profileservlet</url-pattern>
   </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>AddCourseServlet</display-name>
+    <servlet-name>AddCourseServlet</servlet-name>
+    <servlet-class>com.controller.AddCourseServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>AddCourseServlet</servlet-name>
+    <url-pattern>/AddCourseServlet</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>PaymentCheckServlet</display-name>
+    <servlet-name>PaymentCheckServlet</servlet-name>
+    <servlet-class>com.controller.PaymentCheckServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>PaymentCheckServlet</servlet-name>
+    <url-pattern>/PaymentCheckServlet</url-pattern>
+  </servlet-mapping>
 </web-app>

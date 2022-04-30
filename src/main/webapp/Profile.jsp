@@ -9,6 +9,7 @@
 <jsp:include page="TagHead.jsp"></jsp:include>
 </head>
 <body style="background-color: pink; height: 100vh;">
+	<jsp:include page="PageLoader.jsp"></jsp:include>
 	<%UserBean user=(UserBean)request.getAttribute("userget"); %>
 	
 	<div class="container py-5 h-100">
@@ -32,11 +33,11 @@
 								<hr class="mt-0 mb-4">
 								<div class="row pt-1">
 									<div class="col-6 mb-3">
-										<h6>Password</h6>
+										<h6>Email</h6>
 										<p class="text-muted"><%=user.getEmail() %></p>
 									</div>
 									<div class="col-6 mb-3">
-										<h6>Phone</h6>
+										<h6>Password</h6>
 										<p class="text-muted"><%=user.getPassword() %></p>
 									</div>
 								</div>
@@ -56,12 +57,19 @@
 									<% if(user.getRoleid()==1){%>
 									<div class="col-6 mb-3 ">
 										<a class="btn  submit px-3"
-											style="background-color: #f6586d; color: white;" href="">Add
+											style="background-color: #f6586d; color: white;" href="AddCourse.jsp">Add
 											course</a>
 									</div>
 									<% }%>
+									
 									<div class="col-6 mb-3">
-										<a class="btn  submit px-3"
+										
+											<a class="btn  submit px-3"
+											style="background-color: #f6586d; color: white;" href="ProfileCourse.jsp">Show Course</a>
+									</div>
+									<div class="col-6 mb-3">
+										
+											<a class="btn  submit px-3"
 											style="background-color: #f6586d; color: white;" href="LogoutM">Logout</a>
 									</div>
 								</div>
@@ -73,5 +81,6 @@
 			</div>
 		</div>
 	</div>
+		<jsp:include page="TagScript.jsp"></jsp:include>
 </body>
 </html>

@@ -13,9 +13,11 @@
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 	
 	<link rel="stylesheet" href="css/stylelogin.css">
+	
+	<link rel="icon" type="image/x-icon" href="img/favicon.png">
 
 </head>
-<body>
+<body >
 	<!-- loading page -->
 	<jsp:include page="PageLoader.jsp"/>
 	
@@ -53,7 +55,7 @@
 									</p>
 								</div>
 							</div>
-							<form action="LoginM" class="signin-form">
+							<form action="LoginM" class="signin-form" method="post">
 								<div class="form-group mb-3">
 									<label class="label" for="name">Email</label>
 									<input type="text" class="form-control" placeholder="Username" name="email_l">

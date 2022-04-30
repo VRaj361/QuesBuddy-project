@@ -13,6 +13,8 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 
     <link rel="stylesheet" href="css/stylelogin.css">
+    
+    <link rel="icon" type="image/x-icon" href="img/favicon.png">
 
 </head>
 
@@ -62,7 +64,7 @@
                                     </p>
                                 </div>
                             </div>
-                            <form  class="signin-form" action="SignupM">
+                            <form  class="signin-form" action="SignupM" method="post">
                                 <div class="form-group mb-3">
                                     <label class="label" for="name">First Name</label>
                                     <input type="text" class="form-control" placeholder="Firstname" name="firstname_s" >

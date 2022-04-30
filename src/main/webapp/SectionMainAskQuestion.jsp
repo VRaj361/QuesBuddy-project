@@ -25,7 +25,7 @@ String toast = (String) request.getAttribute("isToast");
 						<p>Question can answer by community, Experts in their field
 							and Industrail Professionals.</p>
 					</div>
-					<form class="contact-form" action="AskAQuestionMainServlet" >
+					<form class="contact-form" action="AskAQuestionMainServlet" method="post" >
 						
 		
 						

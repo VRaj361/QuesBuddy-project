@@ -11,7 +11,7 @@
 							Connections, Hand's on Sessions and Many more.</p>
 					</div>
 					<!-- signup form -->
-					<form class="signup-form">
+					<form class="signup-form" action="SignupM">
 						<input type="text" placeholder="Your FirstName"> <input
 							type="text" placeholder="Your LastName"> <input
 							type="text" placeholder="Your E-mail"> <input type="text"
