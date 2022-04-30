@@ -42,10 +42,10 @@
 <%}else{ %>
     <section class="vh-100" >
         <div class="container h-100">
-          <div class="row d-flex justify-content-center align-items-center h-100 text-white ">
+          <div class="row d-flex justify-content-center align-items-center h-100 text-white">
             <div class="col" >
                 
-                <div class="card mb-4" style="background-color: #d82a4e;">
+                <div class="card mb-4 pt-3" style="background-color: #d82a4e;">
                   <p class="text-center" ><span class="h2">Your Courses </span></p>
                 <div class="card-body p-4">
       
@@ -111,9 +111,12 @@
                 
               </div>
       			
-              <div class="d-flex justify-content-end">
-                <a href="HomeLogin.jsp" type="button" class="site-btn header-btn text-capitalize fs-1">Back to Home</a>
-              </div>
+              <div class="d-flex justify-content-end " >
+                <!-- <a href="HomeLogin.jsp" type="button" class="site-btn header-btn text-capitalize fs-1">Back to Home</a> -->
+                <a href="HomeLogin.jsp" style="background-color: #d82a4e; padding: 2%; border-radius: 50%"><div class="btn  rounded-circle"  >
+						<span class="fa fa-home text-white fa-2x" ></span>
+					</div>
+              </div></a>
       
             </div>
           </div>
