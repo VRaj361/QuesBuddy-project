@@ -18,7 +18,7 @@
 						<button class="btn  ">Develepment</button>
 						<button class="btn  ">SEO</button>
 
-						<br> <span>Searched: 120 times</span>
+						
 					</div>
 				</div></a>
 			</div>
@@ -33,7 +33,6 @@
 						<button class="btn  ">Frameworks</button>
 						<button class="btn  ">FrontEnd</button>
 
-						<br> <span>70 Courses</span>
 					</div>
 				</div></a>
 			</div>
@@ -48,7 +47,7 @@
 						<button class="btn  ">Canvas</button>
 						<button class="btn  ">Colors</button>
 
-						<br> <span>55 Courses</span>
+						
 					</div>
 				</div></a>
 			</div>
@@ -63,7 +62,7 @@
 						<button class="btn  ">Linkedin</button>
 						<button class="btn  ">Twitter</button>
 
-						<br> <span>40 Courses</span>
+						
 					</div>
 				</div></a>
 			</div>
@@ -78,7 +77,7 @@
 						<button class="btn  ">Apps</button>
 						<button class="btn  ">Editing</button>
 
-						<br> <span>220 Courses</span>
+						
 					</div>
 				</div></a>
 			</div>
@@ -93,7 +92,7 @@
 						<button class="btn  ">Bitcoin</button>
 						<button class="btn  ">Web 3.0</button>
 
-						<br> <span>25 Courses</span>
+						
 					</div>
 				</div>
 			</div></a>

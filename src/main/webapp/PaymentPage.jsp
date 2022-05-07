@@ -307,7 +307,7 @@ form .btn.btn-primary:hover {
 							<span>Credit Card</span>
 							<div class="inputWithIcon">
 								<input class="form-control" type="text"
-									placeholder="5136 1845 5468 3894" name="cardnumber"> <span class=""> <img
+									placeholder="1111 1111 1111 1111" name="cardnumber"> <span class=""> <img
 									src="https://www.freepnglogos.com/uploads/mastercard-png/mastercard-logo-logok-15.png"
 									alt=""></span>
 									<input  type="hidden" value=<%=innum %> name="billinvoice" /> 
@@ -315,8 +315,9 @@ form .btn.btn-primary:hover {
 							</div>
 						</div>
 					</div>
+				
 					<div class="col-md-6">
-						<div class="d-flex flex-column ps-md-5 px-md-0 px-4 mb-4">
+						<div class="d-flex flex-column ps-md-5  px-4 mb-4">
 							<span>Expiration<span class="ps-1">Date</span></span>
 							<div class="inputWithIcon">
 								<input type="month" class="form-control" placeholder="05/20" name="cardmonth"> <span
@@ -325,7 +326,7 @@ form .btn.btn-primary:hover {
 						</div>
 					</div>
 					<div class="col-md-6">
-						<div class="d-flex flex-column pe-md-5 px-md-0 px-4 mb-4">
+						<div class="d-flex flex-column pe-md-5  px-4 mb-4">
 							<span>Code CVV</span>
 							<div class="inputWithIcon">
 								<input type="password" class="form-control" placeholder="123" name="cardcvv">
@@ -333,6 +334,7 @@ form .btn.btn-primary:hover {
 							</div>
 						</div>
 					</div>
+					
 					<div class="col-12">
 						<div class="d-flex flex-column px-md-5 px-4 mb-4">
 							<span>Name</span>

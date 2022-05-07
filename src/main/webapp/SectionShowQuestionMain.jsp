@@ -16,7 +16,7 @@
 					<div class="blog-metas">
 						<div class="blog-meta author">
 							<div class="post-author set-bg" data-setbg="img/authors/1.jpg"></div>
-							<a href="#">James Smith</a>
+							<a href="#">Aman Parekh</a>
 						</div>
 						<div class="blog-meta">
 							<a href="#">Development</a>
