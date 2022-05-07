@@ -6,7 +6,7 @@ HTML, CSS, JavaScript, JQuery, SCSS, JSP, Servlet, Postgres Data base
 
 ## Pictures of the QuesBuddy
 
-![first home](https://github.com/VRaj361/QuesBuddy-project/blob/main/Images%20QuesBuddy-Project/home1.png)
+!(https://github.com/VRaj361/QuesBuddy-project/blob/main/Images%20QuesBuddy-Project/home1.png)
 
 
 <!-- ![This is animationimage](https://github.com/VRaj361/QuesBuddy-project/blob/main/Images%20QuesBuddy-Project/animatedpage.png) -->
