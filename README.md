@@ -1,6 +1,6 @@
 # QuesBuddy-project
-<h4>There is my project named Quesbuddy. This is J2EE Project Which based on Learning website with getting Solutions and Courses.</h4>
-<br>
+There is my project named Quesbuddy. This is J2EE Project Which based on Learning website with getting Solutions and Courses.
+
 ## Implemented Languages and Tools : 
 <h5> HTML, CSS, JavaScript, JQuery, SCSS, JSP, Servlet, Postgres Data base </h5>
 <br><br>
