@@ -7,7 +7,7 @@ HTML, CSS, Bootstrap, JavaScript, JQuery, SCSS, JSP, JSTL, Servlet, Postgres Dat
 ## Pictures of the QuesBuddy
 
 #### 1. Home Page
-![](https://github.com/VRaj361/QuesBuddy-project/blob/main/Images%20QuesBuddy-Project/home1.png)
+![](https://github.com/VRaj361/QuesBuddy-project/blob/main/Images%20QuesBuddy-Project/home1.png){ width=50% }
 
 #### 2. Mosk Asked Topic
 ![](https://github.com/VRaj361/QuesBuddy-project/blob/main/Images%20QuesBuddy-Project/mostasktopic.png)
