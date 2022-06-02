@@ -38,7 +38,7 @@
                             <div class="text w-100">
                                 <h2>Welcome to Sign Up</h2>
                                 <p>Do you have account?</p>
-                                <a href="login.html" class="btn btn-white btn-outline-white">Login</a>
+                                <a href="login.jsp" class="btn btn-white btn-outline-white">Login</a>
                                 
                             </div>
                         </div>

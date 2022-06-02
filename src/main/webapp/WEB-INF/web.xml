@@ -122,4 +122,24 @@
     <servlet-name>PaymentCheckServlet</servlet-name>
     <url-pattern>/PaymentCheckServlet</url-pattern>
   </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>ForgetPasswordM</display-name>
+    <servlet-name>ForgetPasswordM</servlet-name>
+    <servlet-class>com.controller.ForgetPasswordM</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ForgetPasswordM</servlet-name>
+    <url-pattern>/ForgetPasswordM</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>OtpVerify</display-name>
+    <servlet-name>OtpVerify</servlet-name>
+    <servlet-class>com.controller.OtpVerify</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>OtpVerify</servlet-name>
+    <url-pattern>/OtpVerify</url-pattern>
+  </servlet-mapping>
 </web-app>
