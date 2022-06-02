@@ -78,8 +78,6 @@ public class EmailService {
 					+ "                          <p style=\"color:red; font-size:15px;line-height:14px; margin-top:14;\">\r\n"
 					+ "                            OTP is valid only 60 seconds.\r\n"
 					+ "                          </p>\r\n"
-					+ "                          <a href=\"javascript:void(0);\" style=\"background:#dc4061;text-decoration:none !important; font-weight:500; margin-top:35px; color:#fff;text-transform:uppercase; font-size:14px;padding:10px 24px;display:inline-block;border-radius:50px;\">Reset\r\n"
-					+ "                            Password</a>\r\n"
 					+ "                        </td>\r\n"
 					+ "                      </tr>\r\n"
 					+ "                      <tr>\r\n"

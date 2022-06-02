@@ -18,11 +18,13 @@ public class ForgetPasswordM extends HttpServlet {
 			throws ServletException, IOException {
 		System.out.println("Forget Password");
 		String forget_email = request.getParameter("email_f");
-
+		Cookie c1=new Cookie("changepassemail",forget_email);
+		response.addCookie(c1);
+		
 		// logic of otp
 		Random rnd = new Random();
 		int number = rnd.nextInt(999999);
-
+		
 		// this will convert any number sequence into 6 character.
 		String otp = String.format("%06d", number);
 		System.out.println(otp);

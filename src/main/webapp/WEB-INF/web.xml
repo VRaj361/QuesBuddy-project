@@ -142,4 +142,14 @@
     <servlet-name>OtpVerify</servlet-name>
     <url-pattern>/OtpVerify</url-pattern>
   </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>ChangePasswordM</display-name>
+    <servlet-name>ChangePasswordM</servlet-name>
+    <servlet-class>com.controller.ChangePasswordM</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ChangePasswordM</servlet-name>
+    <url-pattern>/ChangePasswordM</url-pattern>
+  </servlet-mapping>
 </web-app>
