@@ -11,7 +11,9 @@ import javax.servlet.http.HttpSession;
 
 import com.bean.Course;
 import com.bean.Customer;
+import com.bean.UserBean;
 import com.dao.QuesBuddyDao;
+import com.service.EmailService;
 
 
 public class PaymentCheckServlet extends HttpServlet {
@@ -60,6 +62,15 @@ public class PaymentCheckServlet extends HttpServlet {
 				// TODO Auto-generated catch block
 				e.printStackTrace();
 			}
+			UserBean user=null;
+			try {
+				user=dao.fetchAllData(userid);
+			} catch (SQLException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
+			EmailService mail=new EmailService();
+			mail.buyCourseEmail(c,user);
 			response.sendRedirect("LoadinPage.jsp");
 		}
 		
