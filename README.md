@@ -47,5 +47,7 @@ HTML, CSS, Bootstrap, JavaScript, JQuery, SCSS, JSP, JSTL, Servlet, Postgres Dat
 
 ![](https://github.com/VRaj361/QuesBuddy-project/blob/main/Images%20QuesBuddy-Project/askquestion.png)
 
+#### 9. OTP for Forget Password in G-mail
 
+![](https://github.com/VRaj361/QuesBuddy-project/blob/main/Images%20QuesBuddy-Project/EmailOTPForgetPassword.png)
 
