@@ -2,7 +2,7 @@
 There is my project named Quesbuddy. This is Web-Development Project Which based on Learning website with getting Solutions and Courses.
 
 ## Implemented Languages and Tools : 
-HTML, CSS, Bootstrap, JavaScript, JQuery, SCSS, JSP, JSTL, Servlet, Postgres Database 
+HTML, CSS, Bootstrap, JavaScript, JQuery, SCSS, JSP, JSTL, Servlet, Postgres Database, SMTP Protocol (Email) 
 
 ## Pictures of the QuesBuddy
 
